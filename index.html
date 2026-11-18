@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI and the Customer Experience: Foundever case study</title>
+<meta name="description" content="An informational report on how AI may change customer engagement, personalization and business effectiveness in CX outsourcing, using Foundever as a case study.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--surface:#fff;--ink:#1c2430;--muted:#5b6674;--line:#d9dee5;--accent:#0b6a78;--tint:#e3f1f3;--serif:"Source Serif 4",Georgia,serif;--sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media(prefers-color-scheme:dark){:root{--bg:#12171d;--surface:#1a2129;--ink:#e6eaef;--muted:#9aa5b2;--line:#2c3743;--accent:#5cc3d1;--tint:#17323a}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:1.5rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.075rem/1.7 var(--serif)}
+a{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);max-width:1180px;margin:0 auto}
+nav{position:sticky;top:0;align-self:start;height:100vh;padding:2.5rem 1.5rem;font-family:var(--sans);font-size:.92rem;border-right:1px solid var(--line)}
+nav summary{list-style:none;pointer-events:none}nav summary::-webkit-details-marker{display:none}nav strong{display:block;margin-bottom:1.2rem;line-height:1.3}
+nav a{display:block;padding:.35rem .75rem;margin-left:-.75rem;color:var(--muted);text-decoration:none;border-left:3px solid transparent}
+nav a:hover{color:var(--ink)}nav a.on{color:var(--accent);border-left-color:var(--accent);font-weight:600}
+main{padding:3.5rem 2.5rem 5rem;max-width:46rem}
+header h1{font:700 clamp(2rem,4.2vw,2.9rem)/1.15 var(--sans);margin:0 0 .6rem;letter-spacing:-.01em}
+header .sub{font:400 1.25rem/1.4 var(--serif);color:var(--muted);margin:0 0 1.5rem}
+.meta{font:.92rem/1.6 var(--sans);color:var(--muted);margin:0 0 2.5rem;padding-top:1rem;border-top:1px solid var(--line)}
+.meta b{color:var(--ink)}
+h2{font:700 1.7rem/1.25 var(--sans);margin:3.5rem 0 1rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+h3{font:600 1.1rem/1.35 var(--sans);margin:2rem 0 .5rem}
+p{margin:0 0 1.1rem}
+.abstract{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.5rem 1.75rem;margin-bottom:1rem}
+.abstract h2{margin:0 0 .75rem;padding:0;border:0;font-size:1.25rem}
+.abstract p:last-child{margin:0}.keyterms{font-size:.97rem;color:var(--muted)}
+.finding{background:var(--tint);border-left:4px solid var(--accent);padding:.9rem 1.25rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+.finding strong{font:600 .95rem var(--sans);color:var(--accent)}.finding p{margin:.25rem 0 0}
+figure{margin:2rem 0;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:.75rem}
+figure img{display:block;max-width:100%;height:auto;margin:0 auto}
+figcaption{font:.88rem/1.5 var(--sans);color:var(--muted);margin-top:.6rem}
+ol li{margin-bottom:.8rem}blockquote{margin:0}
+#references p{padding-left:1.5rem;text-indent:-1.5rem;font-size:.97rem;overflow-wrap:anywhere}
+footer{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--line);font:.85rem var(--sans);color:var(--muted)}
+@media(max-width:860px){.layout{display:block}nav{position:static;height:auto;border:0;border-bottom:1px solid var(--line);padding:1rem 1.25rem}
+nav summary{pointer-events:auto;cursor:pointer}nav summary strong{display:inline;margin:0}nav summary::after{content:' ▾'}nav a{margin-left:0}main{padding:2rem 1.25rem 4rem}}
+@media print{nav{display:none}.layout{display:block}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav aria-label="Report sections"><details open><summary><strong>Contents</strong></summary><a href="#abstract">Abstract</a><a href="#introduction">Introduction</a><a href="#main-research-and-findings">Main Research &amp; Findings</a><a href="#secondary-research">Secondary Research</a><a href="#emerging-themes-and-analysis">Emerging Themes and Analysis</a><a href="#conclusion">Conclusion</a><a href="#references">References</a><a href="#supporting-documents">Supporting documents</a></details></nav>
+<main>
+<header>
+<h1>AI and the Customer Experience</h1>
+<p class="sub">Evaluating its impact on engagement, personalization, and business effectiveness at Foundever</p>
+<p class="meta"><b>Graiden E. Fry</b><br>Colorado State University, School of Language Arts<br>CO150, Intro to Composition<br>October 16, 2026</p>
+</header>
+<section id="abstract" class="abstract"><h2>Abstract</h2><p>Artificial intelligence (AI) is reshaping how companies engage
+customers, personalize service, and manage costs. For business process
+outsourcing (BPO) providers that deliver customer experience (CX) on
+behalf of clients, this is beginning to pose a threat. This report asks
+how AI might change customer engagement, personalization, and business
+effectiveness for BPO companies such as Foundever. It uses interviews
+with two Foundever leaders, an Operations Manager and a Client Solutions
+leader, and industry, academic, and company sources. The interviews show
+that leaders view AI as unavoidable and worry that competitor companies
+are integrating it faster. The secondary research suggests that client
+companies are increasingly looking to BPOs for AI-based services, that
+AI can strengthen personalization when built on well-integrated and
+responsibly handled data, and that AI which assists human agents
+improves engagement and productivity more reliably than AI that replaces
+them. Sources disagree about the effect on jobs, and the interviewees
+did not address how agent roles would change. The report recommends that
+Foundever prioritize agent-assisting AI, build personalization on its
+omnichannel data with clear safeguards, develop its leaders, and
+redesign roles around human-AI collaboration.</p><p class="keyterms"><b>Key terms:</b> “AI" covers several tools, including analytics, chatbots
+that automate interactions, and generative AI that assists human agents.
+"Engagement" refers to how customers respond to service (for example,
+politeness and requests to escalate to a manager), "personalization" to
+tailoring service using customer data.</p></section>
+<h2 id="introduction">Introduction</h2>
+<p>Foundever (Formerly Sitel, rebranded in March of 2023) is a global
+business process outsourcing (BPO) company that provides customer care
+and technical support services. It is headquartered in Luxembourg city,
+Luxembourg, and it employs 170,000 agents across 45 countries
+(Foundever, 2026).</p>
+<p>The BPO industry is being reshaped by advances in artificial
+intelligence (AI), which are changing how companies engage with
+customers, personalize service, and manage costs (Edelman &amp; Abraham,
+2022). These shifts matter to the companies, to the agents who do the
+work, and to customers. This report is written for readers in the CX
+outsourcing industry who want to understand these trade-offs before
+forming their own conclusions. It asks: <em><strong>How might AI change
+customer engagement, personalization, and business effectiveness for BPO
+companies such as Foundever?</strong></em> It answers this through
+interviews with two Foundever leaders and a comparison of industry,
+academic, and company sources.</p>
+<h3>Methodology</h3>
+<p>Primary data came from two interviews conducted on (October 3, 2026),
+with an Operations Manager (April D.) and a Client Solutions leader
+(Mike J.), they are both current Foundever employees. The interviews
+explored Foundever’s operations, its existing use of AI, and its future
+direction. Their responses are treated as individual perspectives rather
+than official company positions. Because both participants are
+employees, their views may favor the company, and two interviews cannot
+represent the whole organization.</p>
+<p>Secondary data was drawn from industry, academic, and company
+sources. Industry sources include McKinsey &amp; Company (Buesing et
+al., 2024) and Harvard Business Review (Edelman &amp; Abraham, 2022;
+Daugherty et al., 2023). Peer-reviewed research includes (Byrnjolfsson
+et al., 2025) on AI’s effect on customer-support productivity and
+(Arora, 2025) on how AI changes service work. (Roser, 2024) provides
+background on the development of AI, and Foundever’s website provides
+company information.</p>
+<h2 id="main-research-and-findings">Main Research &amp; Findings</h2>
+<h3>A Brief Background on the Evolution of AI</h3>
+<p>Since 1956, when the field of AI was formally established, there have
+been significant advances beyond its original aim of simulating human
+intelligence in machines (Roser,2024). Around 1990, AI development
+accelerated as greater computing power made it possible to process much
+larger data sets, and at the turn of the century there was an even
+bigger jump in both computing power and data availability (Roser,2024).
+Around 2010, advances in neural networks and deep learning enabled major
+progress in image processing and speech recognition. It was not until
+around 2019 and 2020 that AI reached a level of language understanding
+strong enough to be practical for customer service work (Roser, 2024).
+(Figure 1) shows how quickly the computing power used to train AI
+systems has grown across this period.</p><figure><a href="images/image8.jpg"><img src="images/image8.jpg" alt="Timeline of milestones in AI development, 1940–2060" loading="lazy"></a><figcaption><b>Figure 1.</b> Timeline of AI development from the first digital computers to forecasts for 2060. (Roser, 2024)</figcaption></figure>
+<p>Huang and Rust (2018) describe four types of intelligence used by AI:
+mechanical, analytical, intuitive, and empathetic intelligence. They
+argue that AI will initially take over repetitive and mechanical tasks
+before taking on more complex tasks. When AI is introduced to the
+customer care industry its mechanical intelligence does the repetitive
+work that Human agents don't need to be there to do such as password
+resets or payment collection. Its analytical intelligence recognizes
+patterns in customer data it receives, by using this data it could
+predict why customers are contacting the company for support. It uses
+its intuitive and empathic intelligence to understand why a customer may
+be frustrated or calming them down. Human agents still lead in this area
+as few people are going to believe an AI understands their frustration.
+Current CX utilises chatbots, automated responses, agent support, and
+analytics (Buesing et al., 2024), doing work mostly in the mechanical
+and analytical categories.</p><figure><a href="images/image3.png"><img src="images/image3.png" alt="Chart of AI test scores relative to human performance, 1998–2020" loading="lazy"></a><figcaption><b>Figure 2.</b> Language and image recognition capabilities of AI systems have improved rapidly. (Roser, 2024)</figcaption></figure>
+<h3>The Role of BPO Companies</h3><figure><a href="images/image1.png"><img src="images/image1.png" alt="Diagram showing the business functions BPO companies handle" loading="lazy"></a><figcaption><b>Figure 3.</b> What BPO is used for: sales, lead engagement, customer service, human resources, accounting and marketing.</figcaption></figure>
+<p>A large part of Customer experience (CX) is customer support. This
+matters to companies because it is what builds trust and loyalty between
+the company and its customers which keeps revenue coming in. Many
+companies deliver CX by partnering with business process outsourcing
+(BPO) companies who specialize in customer care and help clients reduce
+costs while introducing advancements in CX (Buesing et al., 2024).
+McKinsey’s survey of more than 340 customer care leaders found that
+outsourcing relationships now extend well beyond traditional call and
+email handling (Buesing et al., 2024). This means that BPO companies are
+in charge of changing how customers see their clients' brands.</p>
+<p>Foundever illustrates how this role has grown. It began its journey
+in 1985 by providing phone support and has since expanded into chat,
+email, social media, and other channels as the requirements for customer
+communication have evolved(Foundever, 2026). Because so much of this
+work is routine, high-volume, and data-rich, it is the kind of work AI
+is best placed to change (Huang &amp; Rust, 2018). At the same time, the
+scale that makes Foundever a useful case also raises the stakes.
+Decisions about AI affect not only Foundever’s clients and customers but
+also a very large workforce, and research on outsourced automation shows
+that people often remain behind services presented as automated
+(Iantorno et al., 2022).</p>
+<h3>Primary Source: Interview with Foundever Employees</h3>
+<p>Two leaders at Foundever were interviewed for this report, an
+Operations Manager (April D.) and a Client Solutions leader (Mike J.),
+as they were interviewed three patterns stood out from their responses.
+I note where they agreed, where their opinion differed, and how their
+views compare with the secondary sources.</p>
+<h3>Question Set 1: Foundever’s Current AI Usage &amp; Position in BPO</h3>
+<p>Both interviewees see an AI-assisted future as unavoidable if
+Foundever wants to keep up with its competition, as competitors are
+using it and because it enables different kinds of services. April
+described this as “ a step towards a more connected and integrated
+support system”, while Mike framed it more in terms of “changing how we
+move forward with fulfilling client needs at a lower cost”. Both
+described Foundever as about average in its use of AI compared with
+competitors (Interview Questions 5, 6, and 7).</p>
+<p>The assessment from them is consistent with McKinsey's description of
+customer care leaders as still having to "prepare their companies for an
+AI-enabled future" (Buesing et al., 2024), which suggests Foundever's
+position is typical of the industry rather than lagging behind.</p>
+<h3>Question Set 2: Opportunities &amp; Concerns with using AI</h3>
+<p>Both see opportunities for growth in new client bases but worry that
+competitors are moving faster and that the window of opportunity may
+close (Interview Questions 8, 9, and 10). Their concern mirrors that of
+Edelman and Abraham's (2022) argument that the advantages of AI will go
+to companies that reshaped its structure to use AI at large.</p>
+<h3>Question Set 3: Exploring the Future of AI at Foundever</h3>
+<p>Third, both leaders expect their usage of AI across clients to
+increase over the next few years. To accomplish this they said current
+leaders will need to either adapt their skills for AI or to be joined by
+new leaders (Interview Questions 11 to 14). I also asked whether they
+were worried that agents would lose their jobs because of AI, and both
+said no. Their reasons were that AI is currently handling the mechanical
+and analytical work, demand is growing, and that agents are being moved
+to other projects.</p>
+<p>These answers are the most revealing in the interviews as they align
+with the ideas of Daugherty et al. (2023), who argue that AI will
+enhance customer service jobs by automating repetitive tasks and freeing
+agents for more complex work. But they also contradict the ideas of
+Huang and Rust (2018) who warn that AI may progress into increasingly
+complex service tasks and threaten some jobs, and with Iantorno et al.
+(2022), who show that systems presented as automated often still rely on
+hidden human labor.</p>
+<h3>How the interviews fit the secondary research</h3>
+<p>The interviews confirm the secondary research on demand and on the
+pace of competition. They complicate it in the workforce, where leaders
+are confident and the literature is divided. And they leave two
+questions unanswered that the secondary research raises: how Foundever
+would handle customer data and trust, and how agents themselves would be
+affected. These gaps shape the recommendations at the end of the
+report.</p>
+<h2 id="secondary-research">Secondary Research</h2>
+<p>My secondary research is focused on three areas related to whether
+Foundever should adapt its business model to use more AI in delivering
+CX services:</p>
+<ol type="1">
+<li>Demand for AI and the Role of BPOs</li>
+<li>Personalization</li>
+<li>Engagement</li>
+</ol>
+<h3>Demand for AI and the Role of BPOs</h3>
+<p>Large companies are treating AI as a source of advantage and look to
+BPOs to deliver it. Edelman and Abraham (2022) interviewed leaders from
+companies including Starbucks, JPMorgan Chase, and Nike. They concluded
+that “<em>We are now at the point where competitive advantage will
+derive from the ability to capture, analyze, and utilize personalized
+customer data at scale and from the use of AI to understand, shape,
+customize, and optimize the customer journey</em>” (Edelman &amp;
+Abraham, 2022). Whether companies deliver CX themselves or through a BPO
+partner, they are going to need to use AI to streamline the collection
+and understanding of customer data across all channels.</p>
+<p>Keeping up is difficult. “<em>Customer care leaders are facing their
+greatest challenge in decades. They must prepare their companies for an
+AI-enabled future</em>” (Buesing et al., 2024). Adding AI means choosing
+the right technology, having employees who can use it, and making sure
+the organization actually acts on its outputs. That burden helps explain
+the next step in McKinsey's survey of more than 340 customer care
+leaders, which found that “<em>outsourcing relationships are becoming
+deeper too…for a range of activities that extends far beyond traditional
+call and email handling… including AI-based customer care tools</em>”
+(Buesing et al., 2024).</p>
+<aside class="finding"><strong>Finding</strong><p> Large companies are seeing AI as a source
+of competitive advantage, and many are looking to extend their
+outsourcing relationships to include AI-based tools, which creates
+demand that BPOs like Foundever can deliver upon.</p></aside>
+<h3>Personalization</h3>
+<p>Sources agree that AI can automate services for customers but that
+the customers' trust limits how far that automation can go, but only one
+source measures what is happening to customers. Edelman and Abraham
+(2022) report that AI can tailor interactions using customer
+preferences, behavior, and previous interactions, and can help predict
+customer needs. Arora (2025) similarly describes how machine learning,
+natural language processing, and predictive analytics let businesses
+tailor service to individual customers across industries. Arora’s paper
+is a working paper and has not been peer reviewed, so it is used here
+only as supporting context. Both sources also note that personalization
+depends on handling customer data responsibly and on integrating AI with
+existing systems, which can be technically and operationally difficult.
+Foundever’s omnichannel model may give it a possible advantage here as
+it already connects customer interactions across phone, email, chat, and
+social media (Foundever, 2026).</p>
+<p>Personalization also carries risks that go beyond technical
+integration. Using customer data to tailor service raises privacy
+questions including what data is collected, how long it is kept, how it
+is used, and whether customers know it is being used. Edelman and
+Abraham (2022) and Arora (2025) both stress responsible data handling is
+pertinent for customer trust. For a BPO such as Foundever the stakes are
+higher as it handles data on behalf of its clients, so a failure affects
+both Foundever's reputation and its clients'. A second risk that comes
+from this is bias. If a model learns from past interactions that were
+not handled correctly it may reproduce the same results, so risks of
+personalization is that it may serve some customers better than others.
+A third concern is transparency, customers should be able to knowl when
+they are dealing with an automated system and have the ability to
+connect with a human agent. Foundever's omnichannel model gives it an
+advantage in connecting customer data, but that advantage only has value
+if the data is handled in ways customers are willing to accept.</p>
+<aside class="finding"><strong>Finding</strong><p> AI can improve personalization, but only
+when it is built on well-integrated data that is handled
+responsibly.</p></aside>
+<h3>Engagement</h3>
+<p>The McKinsey report found that customers still value speaking with
+real people even as digital resources grow (Buesing et al., 2024).
+Edelman and Abraham (2022) warn that companies must balance automation
+with human interaction and Arora (2025) notes that trust affects whether
+people accept and keep using AI-powered services.</p>
+<p>The measured evidence comes from that of Brynjolfsson et al. (2025),
+whose study followed thousands of customer-support agents as a
+generative AI assistant was introduced. The assistant suggested
+responses and guidance to agents while they were working with customers.
+The study found that AI assistants increased productivity, and that the
+gains were largest for newer and less experienced agents. It also found
+that customers who interacted with AI-assisted agents were more polite
+and less likely to ask for a manager. This supports the recommendation
+that Foundever use AI to help newer agents improve faster.</p>
+<aside class="finding"><strong>Finding</strong><p> AI improves CX most when it supports human
+agents instead of replacing them.</p></aside>
+<h2 id="emerging-themes-and-analysis">Emerging Themes and Analysis</h2>
+<p><strong>Efficiency versus human connection.</strong> It is the issue
+that business leaders are facing in today's BPO industry. AI-assisted
+agents produced more “polite” customer interactions and higher
+productivity (Brynjolfsson et al., 2025), and customers still value
+speaking with human agents (Buesing et al., 2024). Yet costs are pushing
+outsourcing companies to automate CX as much as possible. Foundever and
+its clients must decide where that line sits, and the evidence supports
+drawing it where AI supports human agents, not where it replaces
+them.</p>
+<p><strong>Leaders' claims versus customer evidence.</strong> Much of
+the evidence for demand is based on what C-suite leaders say. Edelman
+and Abraham (2022) interviewed business leaders, McKinsey (Buesing et
+al., 2024) surveyed customer care leaders, and the Foundever
+interviewees are leaders as well. Only one source, Brynjolfsson et al.
+(2025), measures actual outcomes. The constant message that AI resources
+are urgently needed and valuable, is stronger as a statement of leaders
+in the industry rather than the experience and wants of human agents in
+the field.</p>
+<p><strong>Promise versus the hidden costs.</strong> AI is a fast paced
+and exponential growth industry with new models and roles being created
+everyday, so how long before humans are no longer needed to fill those
+roles? Daugherty et al. (2023) describe AI as enhancing jobs, while
+Huang and Rust (2018) and Iantorno et al. (2022) point to job risk and
+hidden labor. The interviewees were confident that human agents would
+not lose their jobs, but they did not describe how roles or conditions
+would change. The question about AI in CX is not whether it will replace
+human based roles but how those roles will change.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This report examined how AI may change customer engagement,
+personalization, and business effectiveness for BPO companies such as
+Foundever. The interviews show that Foundever's leaders see an AI
+assisted workforce as inevitable but worry about competitors moving
+faster. The secondary research shows that companies are looking to BPOs
+for AI-based services in order to stay competitive.</p>
+<p><strong>Recommendations</strong></p>
+<p>Foundever should take the following actions.</p>
+<ol type="1">
+<li><blockquote>
+<p>Prioritize AI that assists agents. This is where the strongest
+evidence of productivity and customer benefit exists, and it helps newer
+agents improve faster (Brynjolfsson et al., 2025).
+<em>Implementation:</em> begin with agent-assist tools in a small number
+of client programs. <em>Risk:</em> results from one setting may not
+carry over to others. <em>Measure:</em> resolution time, customer
+satisfaction, and escalation rates compared with similar programs
+without the tool.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Build personalization on its omnichannel data, with clear safeguards.
+Use the connected data across phone, email, chat, and social media, and
+set clear rules for what customer data is used and how (Edelman &amp;
+Abraham, 2022). <em>Risk:</em> privacy failures or biased outputs that
+damage trust. <em>Measure:</em> complaint and opt-out rates, and regular
+checks of whether service quality differs across customer groups.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Develop its leaders. Both interviewees said leaders must adapt their
+AI skills or be joined by new leaders. <em>Implementation</em>: AI
+training for managers and client-facing leaders, tied to the pilots.
+<em>Measure:</em> the share of leaders who can interpret AI performance
+data and apply it in decisions.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Redesign roles around human-AI collaboration. Keep human agents for
+complex and empathetic situations and monitor agents' workload and
+working conditions (Daugherty et al., 2023; Iantorno et al., 2022).
+<em>Implementation:</em> involve agents in designing the new workflows.
+<em>Risk:</em> AI could raise pressure on agents if productivity targets
+rise without adjustment. <em>Measure:</em> agent satisfaction, turnover,
+and workload over time.</p>
+</blockquote></li>
+</ol>
+<p>In summary, Foundever should use its roughly 40 years of experience
+and its existing market position to invest in AI as a way to assist its
+human agents, not replace them.</p>
+
+<section id="references"><h2>References</h2>
+<p>Arora, A. (2025, May 23). <em>Enhancing customer experience across
+multiple business domains using artificial intelligence</em>. SSRN. <a
+href="https://doi.org/10.2139/ssrn.5268178">doi.org/10.2139/ssrn.5268178</a></p>
+<p>Brynjolfsson, E., Li, D., &amp; Raymond, L. (2025). Generative AI at
+work. <em>The Quarterly Journal of Economics, 140</em>(2), 889-942. <a
+href="https://academic.oup.com/qje/article/140/2/889/7990658">academic.oup.com/qje/article/140/2/889/7990658</a></p>
+<p>Buesing, E., Haug, M., Hurst, P., Lai, V., Mukhopadhyay, S., &amp;
+Raabe, J. (2024, March 12). <em>Where is customer care in 2024?</em>
+McKinsey &amp; Company. <a
+href="https://www.mckinsey.com/capabilities/operations/our-insights/where-is-customer-care-in-2024">www.mckinsey.com/capabilities/operations/our-insights/where-is-customer-care-in-2024</a></p>
+<p>Daugherty, P. R., Wilson, H. J., &amp; Narain, K. (2023, March).
+Generative AI will enhance-not erase-customer service jobs. <em>Harvard
+Business Review</em>. <a
+href="https://hbr.org/2023/03/generative-ai-will-enhance-not-erase-customer-service-jobs">hbr.org/2023/03/generative-ai-will-enhance-not-erase-customer-service-jobs</a></p>
+<p>Edelman, D. C., &amp; Abraham, M. (2022, March). Customer experience
+in the age of AI. <em>Harvard Business Review</em>. <a
+href="https://hbr.org/2022/03/customer-experience-in-the-age-of-ai">hbr.org/2022/03/customer-experience-in-the-age-of-ai</a></p>
+<p>Foundever. (2026). <em>Foundever - Omnichannel contact center
+solutions for better CX</em>. <a
+href="https://foundever.com/">foundever.com/</a></p>
+<p>Huang, M.-H., &amp; Rust, R. T. (2018). Artificial intelligence in
+service. <em>Journal of Service Research, 21</em>(2), 155-172. <a
+href="https://doi.org/10.1177/1094670517752459">doi.org/10.1177/1094670517752459</a></p>
+<p>Iantorno, M., Doggett, O., Chandra, P., Chen, J. Y., Steup, R.,
+Raval, N., Khovanskaya, V., Lam, L., Singh, A., Rotz, S., &amp; Ratto,
+M. (2022). Outsourcing artificial intelligence: Responding to the
+reassertion of the human element into automation. In <em>CHI Conference
+on Human Factors in Computing Systems Extended Abstracts</em> (pp. 1-5).
+Association for Computing Machinery.</p>
+<p>Roser, M. (2024, January 29). <em>The brief history of artificial
+intelligence: The world has changed fast - what might be next?</em> Our
+World in Data. <a
+href="https://ourworldindata.org/brief-history-of-ai">ourworldindata.org/brief-history-of-ai</a></p>
+</section>
+<section id="supporting-documents"><h2>Supporting documents</h2><p>Select an image to open it at full size.</p><figure><a href="images/image7.png"><img src="images/image7.png" alt="Foundever in-person interviews: questions and answers from both respondents" loading="lazy"></a><figcaption>Foundever in-person interviews: questions and answers from both respondents</figcaption></figure><figure><a href="images/image6.png"><img src="images/image6.png" alt="Harvard Business Review article (Edelman &amp; Abraham, 2022)" loading="lazy"></a><figcaption>Harvard Business Review article (Edelman &amp; Abraham, 2022)</figcaption></figure><figure><a href="images/image5.png"><img src="images/image5.png" alt="Brief history of AI (Roser, 2024)" loading="lazy"></a><figcaption>Brief history of AI (Roser, 2024)</figcaption></figure><figure><a href="images/image9.png"><img src="images/image9.png" alt="Generative AI will enhance, not erase, customer service jobs (Daugherty et al., 2023)" loading="lazy"></a><figcaption>Generative AI will enhance, not erase, customer service jobs (Daugherty et al., 2023)</figcaption></figure></section>
+<footer>Informational report written for a Colorado State University composition course. Interview responses reflect individual perspectives, not official company positions.</footer>
+</main>
+</div>
+<script>
+(function(){var links=[].slice.call(document.querySelectorAll('nav a'));
+var targets=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function spy(){var y=window.scrollY+120,cur=0;targets.forEach(function(t,i){if(t&&t.offsetTop<=y)cur=i});
+links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}
+addEventListener('scroll',spy,{passive:true});spy();})();
+</script>
+</body>
+</html>
